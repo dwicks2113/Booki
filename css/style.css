@@ -13,6 +13,11 @@
     color: var(--main-color);
 }
 
+.flexbox-container {
+    display:flex;
+    justify-content: flex-start;
+
+}
 body {
     display: flex;
     justify-content: center;

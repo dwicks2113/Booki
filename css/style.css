@@ -36,6 +36,10 @@ body {
   justify-content: flex-start;
 }
 
+.logo a:hover {
+  border-top-color: blue;
+}
+
 .topnav {
   display: flex;
   justify-content: end;

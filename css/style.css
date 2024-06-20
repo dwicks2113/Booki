@@ -29,45 +29,32 @@ body {
   box-sizing: border-box;
 }
 
-.logo {
-  flex: 1;
+h3 {
+  line-height: 0.2em;
+}
+
+nav {
+  display: block;
+  
+  
+}
+ul {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: row;
+  
+
 }
 
-.logo a:hover {
-  border-top-color: blue;
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0065fc;
 }
 
-.topnav {
-  display: flex;
-  justify-content: end;
-  align-items: normal;
-  text-decoration: #0065fc;
-}
-.topnav a:hover {
-  border-top-color: #0065fc;
-}
-
-.search {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  border: 2px solid blue;
-  border-radius: 5px;
-}
-
-.search a:hover {
-  border-top-color: #0065fc;
-}
-
-.filters {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  border: 2px solid black;
-  border-radius: 5px;
+a:hover {
+  text-transform: uppercase;
+  color: red;
 }
 
 .section-title {

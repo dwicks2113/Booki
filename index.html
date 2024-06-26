@@ -19,10 +19,9 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script
-  src="https://kit.fontawesome.com/a64084bf6e.js"
-  crossorigin="anonymous"
-></script>
-
+      src="https://kit.fontawesome.com/a64084bf6e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -31,41 +30,70 @@
         <div class="logo">
           <img src="images/logo/Booki.png" alt="Booki logo" title="Booki.com" />
         </div>
-        <p>
-          <h3>Find a place to stay for your dream vacation</h3>
-        in the heart of the city or surrounded by nature.
-      </p>
 
-        <nav>
-          <ul>
-            <li> <a href="#">Accommodations</a></li>
-            <li><a href="#">Things to Do</a></li>
-          </ul>
-        </nav>
-        
-        <div class="search">
-          <a href="Search"><i class="fa-solid fa-location-dot"></i>
-Search</a>
+        <h3>Find a place to stay for your dream vacation</h3>
+        in the heart of the city or surrounded by nature.
+
+        <div class="topnav">
+          <a class="active" href="#thingstodo">Things to Do</a>
+          <a class="active" href="#accommodation">Accommodation</a>
         </div>
-       <strong>Filters</strong> 
-       <div class="filters">
-          <a href="#"><i class="fa-solid fa-money-bill-wave"></i>
-Budget</a>
-          <a href="#"><i class="fa-solid fa-person"></i>
-Family-Friendly</a>
-          <a href="#"><i class="fa-solid fa-heart"></i>
-Romantic</a>
-          <a href="#"><i class="fa-solid fa-fire"></i>
-Our Top Picks</a>
+
+        <form class="example" action="action_page.php">
+          <button class="button button5">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+          <input type="text" placeholder="Marseille, France" name="search" />
+          <button type="submit"><strong>Search</strong></button>
+        </form>
+
+        <div class="filters">
+          <strong>Filters</strong>
+          <button class="button button4">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <strong>Budget</strong>
+          </button>
+          <button class="button button4">
+            <i class="fa-solid fa-person"></i> <strong>Family-Friendly</strong>
+          </button>
+          <button class="button button4">
+            <i class="fa-solid fa-heart"></i> <strong>Romantic</strong>
+          </button>
+          <button class="button button4">
+            <i class="fa-solid fa-fire"></i> <strong>Top Picks</strong>
+          </button>
         </div>
         <p>There are 500 places to stay in this city.</p>
-        
       </header>
       <main>
-        
+        <div class="card">
+          <img src="#" alt="" style="width: 25%" />
+
+          <div class="container">
+            <h4><b></b></h4>
+            <p></p>
+          </div>
+        </div>
 
         <div class="accommodation-and-popular">
-          <section class="accommodation"></section>
+          
+        <section class="accommodation">
+          <div class="accomdation-title">
+            <h2 class="section-title">Marseille Accomodations</h2>
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+          </div>
+          <div class="accommodation-cards">
+            <article class="card">
+              <img src="./i/accommodation/annie-spratt.jpg" alt="Image of hotel room showing bed" title="Annie Spratt hotel">
+              <div class="card-content">
+                <div class="card-txt">
+                  <h3 class="card-title">Annie Spratt hotel</h3>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          
           <section class="popular">
             <div class="popular-title">
               <h2 class="section-title">Most popular</h2>

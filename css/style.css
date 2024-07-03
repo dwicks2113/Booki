@@ -28,12 +28,11 @@ body {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav {
   float: inline-end;
-  color: #101010;
-  text-align: center;
+
+  justify-content: space-between;
   padding: 8px 6px;
-  text-decoration: none;
   font-size: 16px;
 }
 
@@ -41,7 +40,7 @@ body {
 .topnav a:hover {
   background-color: white;
   text-decoration-color: blue;
-  border-top: #0065fc;
+  border-top: solid #0065fc;
 }
 
 /* Add a color to the active/current link */
@@ -70,17 +69,9 @@ form.example button {
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   cursor: pointer;
-}
-
-form.example button5 {
-  float: left;
-  background: lightgray;
-  border-top-left-radius: 16px;
-  border-right: none;
-  border-bottom-left-radius: 16px;
 }
 
 form.example button:hover {
@@ -93,10 +84,17 @@ form.example::after {
   clear: both;
   display: table;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 
 .button4 {
-  border-radius: 16px;
-  border-color: #deebff;
+  border-radius: 32px;
+  border-color: lightgrey;
   background-color: white;
   padding: 16px;
   font-size: 16px;
@@ -107,6 +105,16 @@ form.example::after {
 .button4:hover {
   background-color: #deebff;
 }
+
+
+
+.main-container {
+ 
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -123,33 +131,16 @@ form.example::after {
 .container {
   padding: 2px 16px;
 }
-
-.main-container {
-  width: 100%;
-  padding: 0 50px;
-  box-sizing: border-box;
-}
-
-h3 {
-  line-height: 0.2em;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
 a {
   text-decoration: none;
-  font-weight: bold;
-  color: #0065fc;
+  color: black;
+  padding-right: 15px;
 }
 
 a:hover {
-  text-transform: uppercase;
+  color: blue;
   border-width: 2px;
-  border-top: blue;
-  text-decoration-color: blue;
+  border-top: solid blue;
 }
 
 .section-title {
@@ -157,10 +148,6 @@ a:hover {
   font-size: 22px;
 }
 
-.button4 {
-  justify-content: space-between;
-  
-}
 .button6 {
   background-color: white;
   border: none;
@@ -205,39 +192,51 @@ a:hover {
 /****** Accommodation ***********/
 .accommodation {
   width: 65%;
+  
+}
+.accommodation-cards {
+  display: flex;
+  flex-flow: row wrap;
+  
+
+  
+  
 }
 
 .accommodation-title {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-
+  
 }
 
 .accommodation-cards .card {
   display: flex;
-  margin-top: 33px;;
+  flex-flow: row wrap;
+  margin-top: 33px;
+  
 }
 
 .accommodation-cards img {
-  width: 33%;
-  height: 136px;
+  width: 250.33px;
+  height: 124px;
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .accommodation-cards .card-content {
-  width: 67%;
+  width: 100%;
   padding-left: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  
   box-sizing: border-box;
 }
 
 .accommodation .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
+  
 }
 
 .accommodation-cards .card-subtitle {
@@ -247,8 +246,6 @@ a:hover {
 .accommodation-cards .card-rating {
   margin-bottom: 5px;
 }
-
-
 
 /****** Popular ***********/
 .popular {

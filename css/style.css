@@ -344,13 +344,13 @@ a:hover {
 
 /******activities*******/
 .activities {
-  width: 1340px;
+ 
   height: 559.02px;
-  
-}
+  display: flex;
+  }
 
 .activities-section {
-  width: 1340px;
+  
   height: 559.02px;
   display: flex;
   flex-direction: row;
@@ -358,16 +358,22 @@ a:hover {
   box-sizing: border-box;
 }
 
+.activities-title {
+  
+}
+
 .activities-cards .card {
-  width: 297.5px;
+ 
   height: 439px;
   border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
+
   padding: 20px 19px;
 }
 
 .activities-cards img {
-  width: 297.5px;
+  width: 287.5px;
+
   height: 380px;
 }
 

@@ -78,9 +78,9 @@ body {
   flex-flow: row nowrap;
   border-radius: 0px 15px;
   padding: 15px 16px;
-   
+
   border-color: #0065fc;
-  }
+}
 
 i.fa-solid.fa-location-dot {
   width: 14px;
@@ -91,18 +91,16 @@ i.fa-solid.fa-location-dot {
   color: #000000;
   background-color: #f2f2f2;
   padding: 10px;
-
-
 }
 
 form.example input[type='text'] {
   height: 49px;
-  
+
   font-size: 18px;
   line-height: 21.13px;
   border: 1px solid grey;
   float: left;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 /* Style the submit button */
@@ -259,8 +257,6 @@ a:hover {
   padding-bottom: 24px;
 }
 
-
-
 .accommodation-cards .card {
   margin-top: 33px;
   margin-bottom: 33px;
@@ -344,13 +340,11 @@ a:hover {
 
 /******activities*******/
 .activities {
- 
   height: 559.02px;
   display: flex;
-  }
+}
 
 .activities-section {
-  
   height: 559.02px;
   display: flex;
   flex-direction: row;
@@ -359,14 +353,14 @@ a:hover {
 }
 
 .activities-title {
-  
+  height: 30.02px;
+  padding: 20px;
 }
 
 .activities-cards .card {
- 
   height: 439px;
   border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   padding: 20px 19px;
 }
@@ -380,7 +374,4 @@ border-bottom-left-radius: 20px;
 .activities-cards .card-title {
   width: 297.5px;
   height: 59px;
-  
-  
-  
 }

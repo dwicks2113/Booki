@@ -76,8 +76,8 @@ body {
   height: 49px;
   display: flex;
   flex-flow: row nowrap;
-  border-radius: 0px, 15px;
-  padding: 15px, 16px;
+  border-radius: 0px 15px;
+  padding: 15px 16px;
    
   border-color: #0065fc;
   }
@@ -280,7 +280,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0px, 15px;
+  padding: 0px 15px;
   gap: 4px;
 }
 
@@ -342,11 +342,11 @@ a:hover {
   margin-bottom: 5px;
 }
 
-/******Activities*******/
+/******activities*******/
 .activities {
   width: 1340px;
   height: 559.02px;
-  display: flex;
+  
 }
 
 .activities-section {
@@ -363,8 +363,7 @@ a:hover {
   height: 439px;
   border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
-
-  padding: 20px, 19px;
+  padding: 20px 19px;
 }
 
 .activities-cards img {

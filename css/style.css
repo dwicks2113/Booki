@@ -52,12 +52,13 @@ body {
   color: black;
 }
 
-.infobar {
+.infogroup {
   height: 281px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-top: 40px;
+  gap: 35px;
 }
 
 .find {
@@ -80,7 +81,7 @@ body {
   line-height: 18.78px;
 }
 
-.search-form {
+.searchform {
   width: 377px;
   height: 49px;
   display: flex;
@@ -98,7 +99,6 @@ i.fa-solid.fa-location-dot {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 18px;
   border: none;
-  align-items: center;
   color: #000000;
   background-color: #f2f2f2;
   padding: 10px;
@@ -106,18 +106,19 @@ i.fa-solid.fa-location-dot {
 
 form.example input[type='text'] {
   height: 49px;
-
+  text-align: center;
   font-size: 18px;
-  line-height: 21.13px;
+  font-weight: 700;
   border: 1px solid grey;
   float: left;
+  color: #000000;
   background: #ffffff;
+  gap: 24px;
 }
 
 /* Style the submit button */
 form.example button {
   width: 93px;
-
   float: left;
   padding: 15px 16px 15px 16px;
   background: #0065fc;
@@ -146,6 +147,93 @@ form.example::after {
   flex-wrap: nowrap;
   flex-direction: row-reverse;
   align-items: center;
+}
+
+.filterbar {
+  width: 770px;
+  height: 50px;
+  border: 2px;
+  gap: 10px;
+}
+.budget {
+  width: 131px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+  padding: 4px 19px 4px 19px;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: space-between;
+  gap: 10px;
+}
+.budget:hover {
+  background-color: #deebff;
+}
+
+.family {
+  width: 197px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+  padding: 4px 19px 4px 19px;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.family:hover {
+  background-color: #deebff;
+}
+
+.romantic {
+  width: 148px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+  padding: 4px 19px 4px 19px;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.romantic:hover {
+  background-color: #deebff;
+}
+
+.toppicks {
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+  padding: 4px 19px 4px 19px;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.toppicks:hover {
+  background-color: #deebff;
+}
+
+.infobar {
+  height: 34px;
+  gap: 10px;
+}
+
+i.fa-solid.fa-circle-info {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  align-items: center;
+  gap: 10px;
 }
 
 .button4 {

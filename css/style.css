@@ -53,7 +53,6 @@ body {
 }
 
 .infogroup {
-  height: 281px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -165,7 +164,7 @@ form.example::after {
   font-size: 16px;
   font-weight: 200;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 .budget:hover {
   background-color: #deebff;
@@ -181,7 +180,7 @@ form.example::after {
   font-size: 16px;
   font-weight: 200;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .family:hover {
@@ -198,7 +197,7 @@ form.example::after {
   font-size: 16px;
   font-weight: 200;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .romantic:hover {
@@ -215,7 +214,7 @@ form.example::after {
   font-size: 16px;
   font-weight: 200;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .toppicks:hover {
@@ -223,8 +222,8 @@ form.example::after {
 }
 
 .infobar {
-  height: 34px;
-  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 i.fa-solid.fa-circle-info {
@@ -233,7 +232,6 @@ i.fa-solid.fa-circle-info {
   border: 1px solid #d9d9d9;
   border-radius: 25px;
   align-items: center;
-  gap: 10px;
 }
 
 .button4 {
@@ -254,6 +252,7 @@ i.fa-solid.fa-circle-info {
   width: 100%;
   padding: 0 50px;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 
 .card {

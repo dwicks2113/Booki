@@ -286,13 +286,9 @@ a:hover {
 .section-title {
   margin: 0;
   font-size: 22px;
+  font-weight: 700;
 }
 
-.button6 {
-  background-color: white;
-  border: none;
-  padding: 10px;
-}
 .card {
   background-color: white;
   border-radius: 20px;
@@ -382,6 +378,10 @@ a:hover {
   margin-bottom: 5px;
 }
 
+.show-more {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 /****** Popular ***********/
 .popular {
   width: 32%;
@@ -431,36 +431,55 @@ a:hover {
 .activities {
   height: 559.02px;
   display: flex;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding: 5px;
+  gap: 10px;
 }
-
-.activities-section {
-  height: 559.02px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 .activities-title {
   height: 30.02px;
   padding: 20px;
+  gap: 20px;
+}
+.activities-section {
+  height: 439px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px 0px 10px;
 }
 
 .activities-cards .card {
   height: 439px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-
-  padding: 20px 19px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 .activities-cards img {
   width: 287.5px;
-
   height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .activities-cards .card-title {
   width: 297.5px;
   height: 59px;
+}
+
+.section-footer {
+  height: 163px;
+  background-color: #f2f2f2;
+}
+
+.footer-info {
+  height: 163px;
+  padding: 20 px;
+  gap: 15px;
+}
+
+.footer-about {
+  height: 163px;
+  width: 446.67px;
 }

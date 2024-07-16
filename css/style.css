@@ -19,12 +19,6 @@ body {
   justify-content: center;
 }
 
-.flexbox-container {
-  display: flex;
-  justify-content: flex-start;
-  height: 79px;
-}
-
 .logo a:hover {
   border-top: #021af3;
   gap: 50px;
@@ -234,20 +228,6 @@ i.fa-solid.fa-circle-info {
   align-items: center;
 }
 
-.button4 {
-  border-radius: 32px;
-  border-color: lightgrey;
-  background-color: white;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 200;
-  justify-content: space-between;
-}
-
-.button4:hover {
-  background-color: #deebff;
-}
-
 .main-container {
   width: 100%;
   padding: 0 50px;
@@ -433,7 +413,7 @@ a:hover {
   display: flex;
   margin-top: 35px;
   margin-bottom: 30px;
-  padding: 5px;
+
   gap: 10px;
 }
 .activities-title {
@@ -474,12 +454,27 @@ a:hover {
 }
 
 .footer-info {
-  height: 163px;
-  padding: 20 px;
-  gap: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-title {
+  font-weight: 700;
 }
 
 .footer-about {
+  width: 466.67px;
+  padding-left: 5px;
+  gap: 15px;
+}
+
+.footer-accommodations {
+  width: 466.67px;
+  gap: 15px;
+}
+
+.footer-support {
+  width: 466.67px;
   height: 163px;
-  width: 446.67px;
+  gap: 15px;
 }

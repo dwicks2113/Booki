@@ -433,6 +433,8 @@ a:hover {
 }
 
 .activities-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
   gap: 20px;
 }
 

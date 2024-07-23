@@ -280,7 +280,7 @@ a {
 a:hover {
   color: blue;
   border-width: 2px;
-  }
+}
 
 .section-title {
   margin: 0;
@@ -332,7 +332,7 @@ a:hover {
 /****** Accommodation ***********/
 .accommodation {
   width: 66%;
-  height: 614px;
+  /* height: 614px; */
 }
 
 .accommodation-section {
@@ -439,7 +439,8 @@ a:hover {
 /******activities*******/
 .activities {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-flow: row nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
   gap: 10px;
@@ -458,6 +459,7 @@ a:hover {
 }
 
 .activities-cards .card {
+  /* width: 25%; */
   height: 439px;
   display: flex;
   flex-direction: row;
@@ -524,6 +526,7 @@ a:hover {
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
     background-color: purple;
+    flex-wrap: wrap;
   }
 }
 
@@ -535,6 +538,7 @@ a:hover {
 @media (max-width: 768px) {
   body {
     background-color: red;
+    flex-wrap: wrap;
   }
 }
 /**5.2 Mobile END**/

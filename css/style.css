@@ -280,8 +280,7 @@ a {
 a:hover {
   color: blue;
   border-width: 2px;
-  border-top: solid blue;
-}
+  }
 
 .section-title {
   margin: 0;
@@ -357,7 +356,7 @@ a:hover {
 }
 
 .accommodation-cards img {
-  width: 220.33px;
+  width: 250.33px;
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -443,7 +442,6 @@ a:hover {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-
   gap: 10px;
 }
 
@@ -473,8 +471,9 @@ a:hover {
 }
 
 .activities-cards img {
-  width: 287.5px;
+  width: 327.5px;
   height: 380px;
+  /* align-items: center; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }

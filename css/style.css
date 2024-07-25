@@ -94,14 +94,11 @@ body {
 }
 
 .searchform {
-  width: 377px;
-  height: 49px;
   display: flex;
   flex-flow: row nowrap;
   border-radius: 0px 15px;
   padding-top: 15px;
-  padding-bottom: 60px;
-
+  padding-bottom: 20px;
   border-color: #0065fc;
 }
 
@@ -162,13 +159,12 @@ form.example::after {
 }
 
 .filterbar {
-  width: 770px;
   height: 50px;
   border: 2px;
   gap: 10px;
 }
 
-.budget {
+.filter-button {
   background-color: #ffffff;
   border-radius: 25px;
   border: 2px solid #d9d9d9;
@@ -178,52 +174,7 @@ form.example::after {
   justify-content: space-between;
   gap: 30px;
 }
-.budget:hover {
-  background-color: #deebff;
-}
-
-.family {
-  background-color: #ffffff;
-  border-radius: 25px;
-  border: 2px solid #d9d9d9;
-  padding: 19px;
-  font-size: 16px;
-  font-weight: 200;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.family:hover {
-  background-color: #deebff;
-}
-
-.romantic {
-  background-color: #ffffff;
-  border-radius: 25px;
-  border: 2px solid #d9d9d9;
-  padding: 19px;
-  font-size: 16px;
-  font-weight: 200;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.romantic:hover {
-  background-color: #deebff;
-}
-
-.toppicks {
-  background-color: #ffffff;
-  border-radius: 25px;
-  border: 2px solid #d9d9d9;
-  padding: 19px;
-  font-size: 16px;
-  font-weight: 200;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.toppicks:hover {
+.filter-button:hover {
   background-color: #deebff;
 }
 
@@ -396,7 +347,7 @@ a:hover {
 
 .popular-cards .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 33px;
 }
 
@@ -408,8 +359,8 @@ a:hover {
 }
 
 .popular-cards .card-content {
-  width: 67%;
-  padding-left: 15px;
+  width: 63%;
+  /* padding-left: 15px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -445,6 +396,7 @@ a:hover {
 }
 
 .activities-section {
+  width: 25%;
   padding: 0px 10px 0px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -452,10 +404,8 @@ a:hover {
 }
 
 .activities-cards .card {
-  width: 25%;
-  /* height: 439px; */
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   border-radius: 20px;
   padding: 0px 15px 0px 15px;
 }

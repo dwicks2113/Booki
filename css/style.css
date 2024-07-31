@@ -42,11 +42,11 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav {
-  float: inline-end;
-
+  display: flex;
   justify-content: space-between;
-  padding: 8px 6px;
+  font-weight: 400;
   font-size: 16px;
+  gap: 60px;
 }
 
 /* Change the color of links on hover */
@@ -79,7 +79,7 @@ body {
 }
 
 .findaplace {
-  height: 26px;
+  /* height: 26px; */
   font-weight: 700;
   font-size: 22px;
   line-height: 25.83px;
@@ -112,7 +112,7 @@ i.fa-solid.fa-location-dot {
 }
 
 form.example input[type='text'] {
-   padding: 15px 16px 15px 16px;
+  padding: 15px 16px 15px 16px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -150,8 +150,6 @@ form.example::after {
 .flex-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -181,6 +179,7 @@ form.example::after {
 
 .filter-button:hover {
   background-color: #deebff;
+  cursor: pointer;
 }
 
 .infobar {
@@ -331,8 +330,6 @@ a:hover {
 }
 
 .show-more {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /****** Popular ***********/
@@ -361,7 +358,6 @@ a:hover {
 }
 
 .popular-cards .card-content {
-  /* width: 63%; */
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -386,7 +382,6 @@ a:hover {
 /******activities*******/
 .activities {
   display: flex;
-  flex-flow: row nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
   gap: 10px;
@@ -402,17 +397,15 @@ a:hover {
 }
 
 .activities-section {
-  width: 25%;
+  /* width: 25%; */
   padding: 0px 10px 0px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 20px;
 }
 
-.activities-cards .card;
-{
+.activities-cards .card{
   display: flex;
-  flex-flow: row wrap;
   border-radius: 20px;
   padding: 0px 15px 0px 15px;
 }
@@ -423,16 +416,14 @@ a:hover {
 }
 
 .activities-cards img {
-  width: 100%;
+  width: 297px;
   height: 380px;
-  /* align-items: center; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .activities-cards .card-title {
-  /* height: 59px; */
-  padding-left: 20px;
+   padding-left: 20px;
 }
 
 /** 3. Main ENDS **/
@@ -445,7 +436,7 @@ a:hover {
 
 .footer-info {
   display: flex;
-  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 .footer-title {
@@ -453,19 +444,19 @@ a:hover {
 }
 
 .footer-about {
-  width: 33.3%;
+  justify-self: start;
   padding-left: 20px;
   gap: 15px;
 }
 
 .footer-accommodations {
-  width: 33.3%;
+ 
   padding-left: 20px;
   gap: 15px;
 }
 
 .footer-support {
-  width: 33.3%;
+ 
   padding-left: 20px;
   gap: 15px;
 }
@@ -479,6 +470,9 @@ a:hover {
     background-color: purple;
     flex-wrap: wrap;
   }
+  .flex-container {
+  flex-wrap: wrap;
+  }
 }
 
 /** 5.1 Tablet END **/
@@ -489,6 +483,9 @@ a:hover {
 @media (max-width: 768px) {
   body {
     background-color: red;
+    flex-wrap: wrap;
+  }
+  .flex-container {
     flex-wrap: wrap;
   }
 }

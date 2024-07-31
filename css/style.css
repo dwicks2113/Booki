@@ -244,6 +244,9 @@ a:hover {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
   cursor: pointer;
 }
+ul li {
+  list-style: none;
+}
 
 /* .card-img {
   object-fit: cover;
@@ -444,19 +447,20 @@ a:hover {
 }
 
 .footer-about {
+  list-style-type: none;
   justify-self: start;
   padding-left: 20px;
   gap: 15px;
 }
 
 .footer-accommodations {
- 
+  list-style-type: none;
   padding-left: 20px;
   gap: 15px;
 }
 
 .footer-support {
- 
+  list-style: none;
   padding-left: 20px;
   gap: 15px;
 }

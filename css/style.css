@@ -103,8 +103,6 @@ body {
 }
 
 i.fa-solid.fa-location-dot {
-  width: 14px;
-  height: 34px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 18px;
   border: none;
@@ -114,7 +112,7 @@ i.fa-solid.fa-location-dot {
 }
 
 form.example input[type='text'] {
-  height: 49px;
+   padding: 15px 16px 15px 16px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -127,7 +125,6 @@ form.example input[type='text'] {
 
 /* Style the submit button */
 form.example button {
-  /* width: 93px; */
   float: left;
   padding: 15px 16px 15px 16px;
   background: #0065fc;
@@ -159,9 +156,16 @@ form.example::after {
 }
 
 .filterbar {
-  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: 2px;
   gap: 10px;
+}
+
+.filter-title {
+  font-weight: 400;
+  padding-right: 15px;
 }
 
 .filter-button {
@@ -174,6 +178,7 @@ form.example::after {
   justify-content: space-between;
   gap: 30px;
 }
+
 .filter-button:hover {
   background-color: #deebff;
 }
@@ -184,8 +189,6 @@ form.example::after {
 }
 
 i.fa-solid.fa-circle-info {
-  width: 24px;
-  height: 24px;
   border: 1px solid #d9d9d9;
   border-radius: 25px;
   align-items: center;
@@ -217,7 +220,7 @@ i.fa-solid.fa-circle-info {
 a {
   text-decoration: none;
   color: black;
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 
 a:hover {
@@ -243,9 +246,9 @@ a:hover {
   cursor: pointer;
 }
 
-.card img {
+/* .card-img {
   object-fit: cover;
-}
+} */
 
 .card-title {
   font-size: 16px;
@@ -284,8 +287,7 @@ a:hover {
   justify-content: space-between;
 }
 .accommodation-cards {
-  /* width: 258.33px;
-  height: 211.25px; */
+  width: 31%;
   padding-bottom: 24px;
 }
 
@@ -299,7 +301,7 @@ a:hover {
 }
 
 .accommodation-cards img {
-  width: 250.33px;
+  width: 100%;
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -312,8 +314,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 15px;
-  gap: 4px;
+  
 }
 
 .accommodation .card-title {
@@ -347,20 +348,21 @@ a:hover {
 
 .popular-cards .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 33px;
+  flex: 1;
 }
 
 .popular-cards img {
   width: 33%;
-  /* height: 136px; */
+  height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
 .popular-cards .card-content {
-  width: 63%;
-  /* padding-left: 15px; */
+  /* width: 63%; */
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,12 +380,12 @@ a:hover {
 
 .popular-cards .card-rating {
   margin-bottom: 5px;
-}
+ } 
+
 
 /******activities*******/
 .activities {
   display: flex;
-  /* justify-content: center; */
   flex-flow: row nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -395,6 +397,10 @@ a:hover {
   margin-left: 30px;
 }
 
+.activities-card-title {
+  padding-left: 20px;
+}
+
 .activities-section {
   width: 25%;
   padding: 0px 10px 0px 10px;
@@ -403,7 +409,8 @@ a:hover {
   border-radius: 20px;
 }
 
-.activities-cards .card {
+.activities-cards .card;
+{
   display: flex;
   flex-flow: row wrap;
   border-radius: 20px;
@@ -424,7 +431,8 @@ a:hover {
 }
 
 .activities-cards .card-title {
-  height: 59px;
+  /* height: 59px; */
+  padding-left: 20px;
 }
 
 /** 3. Main ENDS **/
@@ -432,7 +440,6 @@ a:hover {
 /** 4. Footer STARTS **/
 
 .section-footer {
-  height: 163px;
   background-color: #f2f2f2;
 }
 
@@ -453,12 +460,13 @@ a:hover {
 
 .footer-accommodations {
   width: 33.3%;
+  padding-left: 20px;
   gap: 15px;
 }
 
 .footer-support {
   width: 33.3%;
-  height: 163px;
+  padding-left: 20px;
   gap: 15px;
 }
 /** 4. Footer ENDS**/

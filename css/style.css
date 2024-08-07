@@ -193,17 +193,17 @@ i.fa-solid.fa-circle-info {
 }
 
 .main-container {
-  /* width: 100%; */
+  width: 100%;
   padding: 0 50px;
   box-sizing: border-box;
   margin-top: 20px;
 }
 /* Add shadows to create the "card" effect */
-/* .card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-} */
+}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -444,13 +444,13 @@ li {
 
 .section-footer {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: #f2f2f2;
 }
 
 .footer-info {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .footer-title {
@@ -516,6 +516,7 @@ li {
 @media (max-width: 768px) {
   body {
     background-color: red;
+    display: flex;
     flex-wrap: wrap;
   }
   .flex-container {

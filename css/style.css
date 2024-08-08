@@ -289,11 +289,6 @@ li {
   width: 66%;
 }
 
-.accommodation-section {
-  /* display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; */
-}
 .accommodation-cards {
   display: flex;
   flex-direction: row;
@@ -577,21 +572,7 @@ li {
     flex-direction: column;
     order: 2;
   }
-  .accommodation-cards {
-    /* min-width: 305px;
-  display: flex;
-  flex-flow: row wrap; */
-    /* width: 33%; */
-  }
 
-  /* .accommodation-cards {
-    min-width: 305px;
-  } */
-  /* .activities {
-    /* width: 100%; */
-  /* display: flex;
-    flex-flow: column wrap;
-  } */
   .activities {
     width: 100%;
     display: flex;

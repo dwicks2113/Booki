@@ -349,6 +349,7 @@ li {
 .popular-title {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .popular-cards .card {

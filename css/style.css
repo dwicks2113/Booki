@@ -31,7 +31,6 @@ body {
   display: flex;
   justify-content: center;
   max-width: 1440px;
-  min-width: 1024px;
   margin: 0 auto;
 }
 
@@ -291,19 +290,21 @@ li {
 }
 
 .accommodation-section {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .accommodation-cards {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .accommodation-cards .card {
   margin-top: 33px;
   margin-bottom: 33px;
+  width: 250px;
 }
 
 .accommodation-cards:hover {
@@ -353,8 +354,6 @@ li {
 .popular-title {
   display: flex;
   flex-direction: row;
-  
-
 }
 
 .popular-cards .card {
@@ -444,14 +443,12 @@ li {
 /** 4. Footer STARTS **/
 
 .section-footer {
-  display: flex;
-  /* flex-wrap: wrap; */
   background-color: #f2f2f2;
 }
 
 .footer-info {
   display: flex;
-  /* flex-wrap: wrap; */
+  justify-content: space-around;
 }
 
 .footer-title {
@@ -459,22 +456,6 @@ li {
   margin-top: 25px;
 }
 
-.footer-about {
-  flex-flow: column;
-  gap: 15px;
-  align-self: flex-start;
-}
-
-.footer-accommodations {
-  margin-left: auto;
-  gap: 15px;
-}
-
-.footer-support {
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  gap: 15px;
-}
 /** 4. Footer ENDS**/
 
 /** 5. Media Queries **/
@@ -487,6 +468,10 @@ li {
   }
   .flex-container {
     flex-flow: column wrap;
+  }
+  .accommodation {
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .topnav {
@@ -503,18 +488,21 @@ li {
     display: flex;
     flex-direction: row;
   }
+
   .accommodation-cards {
-    display: flex;
-    flex-flow: row wrap;
     /* width: 33%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .popular {
     width: 100%;
-    display: flex;
-    flex-direction: row;
   }
+
   .popular-cards {
+    display: flex;
     flex-direction: row;
   }
   .activities {
@@ -524,18 +512,6 @@ li {
   .footer-info {
     display: flex;
     flex-direction: row;
-  }
-  .footer-about {
-    align-self: flex-start;
-  }
-  .footer-accommodations {
-    margin-left: auto;
-    gap: 15px;
-  }
-  .footer-support {
-    margin-left: auto;
-    margin-right: auto;
-    gap: 15px;
   }
 }
 
@@ -550,8 +526,13 @@ li {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .main-container {
+    padding: 0;
+    gap: 0;
+  }
+
   .topnav {
-    /* float: left; */
     display: flex;
     margin-left: 0;
   }
@@ -565,26 +546,56 @@ li {
     flex-wrap: wrap;
     flex-flow: column;
   }
+  .accommodation-and-popular section {
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    border-radius: 0px;
+    padding: 0px;
+  }
 
+  .accommodation-section {
+    border-radius: 0px;
+  }
   .accommodation-and-popular {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    border-radius: 0px;
   }
   .popular {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     order: 1;
   }
+  .popular-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
   .accommodation {
+    width: 100%;
     display: flex;
     flex-direction: column;
     order: 2;
   }
-  .activities {
+  .accommodation-cards {
+    /* min-width: 305px;
+  display: flex;
+  flex-flow: row wrap; */
+    /* width: 33%; */
+  }
+
+  /* .accommodation-cards {
+    min-width: 305px;
+  } */
+  /* .activities {
     /* width: 100%; */
-    display: flex;
+  /* display: flex;
     flex-flow: column wrap;
+  } */
+  .activities {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .footer-info {

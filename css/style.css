@@ -191,6 +191,17 @@ i.fa-solid.fa-circle-info {
   align-items: center;
 }
 
+i.fa-solid.fa-magnifying-glass {
+  border: #ffffff;
+  color: #ffffff;
+}
+span.search-icon {
+  display: none;
+}
+span.search-text {
+  display: inline-block;
+}
+
 .main-container {
   width: 100%;
   padding: 0 50px;
@@ -459,7 +470,6 @@ li {
 /** Tablet styles here**/
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    background-color: purple;
     flex-wrap: wrap;
   }
   .flex-container {
@@ -518,9 +528,15 @@ li {
 
 @media (min-width: 320px) and (max-width: 768px) {
   body {
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+  }
+  .topnav a:hover {
+    background-color: white;
+    text-decoration-color: blue;
+    border-bottom: solid #0065fc;
+    border-top: none;
   }
 
   .main-container {
@@ -532,10 +548,31 @@ li {
     display: flex;
     margin-left: 0;
   }
+
+  .Find {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .searchform {
+    margin-left: 5px;
+  }
+
+  span.search-icon {
+    display: inline-block;
+  }
+  span.search-text {
+    display: none;
+  }
   .filterbar {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 5px;
+  }
+  .infoicon {
+    margin-left: 10px;
   }
 
   .flex-container {
@@ -551,6 +588,8 @@ li {
 
   .accommodation-section {
     border-radius: 0px;
+    background-color: #ffffff;
+    margin-top: 10px;
   }
   .accommodation-and-popular {
     display: flex;
@@ -565,6 +604,18 @@ li {
   .popular-cards {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .popular-title {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .section-title {
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
   .accommodation {
@@ -573,16 +624,36 @@ li {
     flex-direction: column;
     order: 2;
   }
-
-  .activities {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+  .accommodation-cards .card {
+    width: 350px;
+    margin-bottom: 0;
+  }
+  .show-more {
+    margin-left: 10px;
   }
 
+  .activities {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .activities-title {
+    margin-left: 10px;
+  }
+
+  .activities-cards {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .activities-cards img {
+    height: 200px;
+    width: 100%;
+  }
   .footer-info {
     display: flex;
     flex-flow: column wrap;
+    margin-left: 10px;
   }
 }
 /**5.2 Mobile END**/

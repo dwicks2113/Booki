@@ -472,9 +472,11 @@ li {
   body {
     flex-wrap: wrap;
   }
+  
   .flex-container {
     flex-flow: column wrap;
   }
+
   .accommodation {
     display: flex;
     flex-flow: row wrap;
@@ -489,6 +491,7 @@ li {
     display: flex;
     flex-direction: column;
   }
+
   .accommodation {
     width: 100%;
     display: flex;
@@ -511,14 +514,17 @@ li {
     display: flex;
     flex-direction: row;
   }
+
   .activities {
     display: flex;
     flex-flow: row wrap;
   }
+
   .footer-info {
     display: flex;
     flex-direction: row;
   }
+
 }
 
 /** 5.1 Tablet END **/
@@ -532,6 +538,7 @@ li {
     flex-wrap: wrap;
     background-color: white;
   }
+
   .topnav a:hover {
     background-color: white;
     text-decoration-color: blue;
@@ -561,9 +568,11 @@ li {
   span.search-icon {
     display: inline-block;
   }
+
   span.search-text {
     display: none;
   }
+
   .filterbar {
     width: 100%;
     display: flex;
@@ -571,6 +580,7 @@ li {
     justify-content: space-around;
     margin-left: 5px;
   }
+
   .infoicon {
     margin-left: 10px;
   }
@@ -579,6 +589,7 @@ li {
     flex-wrap: wrap;
     flex-flow: column;
   }
+
   .accommodation-and-popular section {
     background-color: var(--main-bg-color);
     box-sizing: border-box;
@@ -591,22 +602,26 @@ li {
     background-color: #ffffff;
     margin-top: 10px;
   }
+
   .accommodation-and-popular {
     display: flex;
     flex-direction: column;
     border-radius: 0px;
   }
+
   .popular {
     width: 100%;
     display: flex;
     order: 1;
   }
+
   .popular-cards {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .popular-title {
     margin-left: 10px;
     margin-top: 10px;
@@ -624,10 +639,12 @@ li {
     flex-direction: column;
     order: 2;
   }
+
   .accommodation-cards .card {
     width: 350px;
     margin-bottom: 0;
   }
+
   .show-more {
     margin-left: 10px;
   }
@@ -650,10 +667,12 @@ li {
     height: 200px;
     width: 100%;
   }
+
   .footer-info {
     display: flex;
     flex-flow: column wrap;
     margin-left: 10px;
   }
+
 }
 /**5.2 Mobile END**/

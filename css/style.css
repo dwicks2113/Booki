@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   max-width: 1440px;
+  min-width: 1024px;
   margin: 0 auto;
 }
 
@@ -268,7 +269,9 @@ li {
 .card-img {
   object-fit: cover;
 }
-
+.img {
+  object-fit: cover;
+}
 .card-title {
   font-size: 16px;
 }
@@ -298,6 +301,7 @@ li {
 .accommodation {
   gap: 15px;
   width: 66%;
+  margin-right: 15px;
 }
 
 .accommodation-cards {
@@ -405,6 +409,7 @@ li {
   margin-top: 20px;
   margin-bottom: 30px;
   gap: 10px;
+  /* width: 100%; */
 }
 
 .activities-title {
@@ -424,9 +429,10 @@ li {
 }
 
 .activities-cards .card {
-  display: flex;
+  /* display: flex; */
   border-radius: 20px;
   padding: 0px 15px 0px 15px;
+  
 }
 
 .activities-cards:hover {
@@ -435,8 +441,8 @@ li {
 }
 
 .activities-cards img {
-  width: 297px;
-  height: 380px;
+  /* width: 297px; */
+ object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -454,8 +460,10 @@ li {
 }
 
 .footer-info {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-between; */
+  gap: 300px;
 }
 
 .footer-title {

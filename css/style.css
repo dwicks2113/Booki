@@ -405,11 +405,9 @@ li {
 /******activities*******/
 .activities {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 30px;
   gap: 10px;
-  /* width: 100%; */
 }
 
 .activities-title {
@@ -444,6 +442,7 @@ li {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  width: 100%;
 }
 
 .activities-cards .card-title {

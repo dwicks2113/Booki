@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   max-width: 1440px;
-  min-width: 1024px;
+  /* min-width: 1024px; */
   margin: 0 auto;
 }
 
@@ -248,6 +248,7 @@ a:hover {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
 }
 
 .card:hover {
@@ -267,7 +268,8 @@ li {
 }
 
 .card-img {
-  object-fit: cover;
+  /* object-fit: cover; */
+  overflow: hidden;
 }
 .img {
   object-fit: cover;
@@ -309,6 +311,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .accommodation-cards .card {
@@ -326,6 +329,7 @@ li {
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
 }
 
 .accommodation-cards .card-content {
@@ -379,6 +383,7 @@ li {
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  object-fit: cover;
 }
 
 .popular-cards .card-content {
@@ -408,6 +413,7 @@ li {
   margin-top: 20px;
   margin-bottom: 30px;
   gap: 10px;
+  width: 100%;
 }
 
 .activities-title {
@@ -430,6 +436,11 @@ li {
   /* display: flex; */
   border-radius: 20px;
   padding: 0px 15px 0px 15px;
+  /* width: 100%;
+  height: 100%; */
+  width: 298px;
+  height: 440px;
+  object-fit: cover;
 }
 
 .activities-cards:hover {
@@ -442,7 +453,7 @@ li {
   border-top-right-radius: 20px;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .activities-cards .card-title {

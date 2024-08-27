@@ -688,6 +688,7 @@ li {
     display: flex;
     flex-flow: column wrap;
     margin-left: 10px;
+    gap: 0px;
   }
 }
 /**5.2 Mobile END**/
